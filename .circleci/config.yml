@@ -1,0 +1,10 @@
+version: 2.1
+
+jobs:
+  build:
+    resource_class: medium
+    docker:
+      - image: cimg/base:2020.12
+    steps:
+      - checkout
+      - run: echo "test"
